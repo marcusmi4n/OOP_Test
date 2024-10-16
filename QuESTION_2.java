@@ -19,6 +19,8 @@ public class QuESTION_2 {
         int areaint =(int) a;
 
         System.out.println("CIRCLE AREA INTEGER :" + areaint);
+        
+        circle.close();
 
     }
 
