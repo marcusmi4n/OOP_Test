@@ -2,25 +2,35 @@ import java.util.Scanner;
 
 
 public class QuESTION_5 {
-    public static void greetUser(String name) {
 
-        System.out.println(name+"! , You are welcome.");
+    public static void greetUser(String name) {
+        
+        System.out.println("You are welcome, "+name);
 
     }
     
-    public static void greeting(String non){
+    public static void greetUser(){
 
-        System.out.println(non+"! , You are welcome.");
+        System.out.println("You are welcome, New User.");
     }
 
     public static void main(String[] args) {
         Scanner greet = new Scanner(System.in);
 
+        String nam;
+
         System.out.println("ENTER NAME:");
 
-        String nam = greet.nextLine();
+        nam = greet.nextLine();
 
-        if(nam >0)
+        if(nam.length() > 0){
 
+            greetUser(nam);
+
+        } else {
+            greetUser();
+        }
+
+        greet.close();
     }
 }
